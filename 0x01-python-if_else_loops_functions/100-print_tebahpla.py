@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for i in range(122, 96, -1):
-    if i % 2 == 0:
-        n = chr(i)
+for i in reversed(range(97, 123)):
+    if (i % 2 == 0):
+        print('{:c}'.format(i), end='')
     else:
-        n = chr(i-32)
-    print("{}".format(n), end="")
+        print('{:c}'.format(i - 32), end='')
