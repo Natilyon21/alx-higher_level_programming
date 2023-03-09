@@ -1,0 +1,5 @@
+from 0-add.py import add
+
+a = 1
+b = 2
+print("{}".format(add(a,b)))
