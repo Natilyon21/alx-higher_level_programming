@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""contains methods about the creation and hendling of SinglyLinkedList and Node objects """
+"""contains methods about the creation and hendling of
+SinglyLinkedList and Node objects """
 
 
 class Node():
-    """Defines a node of a singly linked list."""
+    """it Defines a node of a singly linked list."""
 
     def __init__(self, data, next_node=None):
-        """Sets the necessary attributes for the Node object.
+        """it Sets the necessary attributes for the Node object.
         Args:
             data (int): the value of the node
             next_node (Node): the next Node
@@ -16,7 +17,7 @@ class Node():
 
     @property
     def data(self):
-        """Get or set the data value of a node."""
+        """it Gets or sets the data value of a node."""
         return self.__data
 
     @data.setter
@@ -28,7 +29,7 @@ class Node():
 
     @property
     def next_node(self):
-        """Get or set the next node of the current node."""
+        """it Gets or sets the next node of the current node."""
         return self.__next_node
 
     @next_node.setter
@@ -40,14 +41,14 @@ class Node():
 
 
 class SinglyLinkedList():
-    """Defines a singly linked list"""
+    """it Defines a singly linked list"""
 
     def __init__(self):
-        """Sets the necessary attributes for the SinglyLinkedList object."""
+        """it Sets the necessary attributes for the SinglyLinkedList object."""
         self.__head = None
 
     def __str__(self):
-        """Sets the print behavior of the SinglyLinkedList object."""
+        """it Sets the print behavior of the SinglyLinkedList object."""
         sll_str = ""
         node = self.__head
 
