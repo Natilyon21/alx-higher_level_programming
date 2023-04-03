@@ -25,14 +25,14 @@ if __name__ == "__main__":
         a.append([i, None])
 
     def already_exists(y):
-        """check that a queen does not already exist in that y value"""
+        """this check that a queen does not already exist in that y value"""
         for x in range(n):
             if y == a[x][1]:
                 return True
         return False
 
     def reject(x, y):
-        """determines whether or not to reject the solution"""
+        """this determines whether or not to reject the solution"""
         if (already_exists(y)):
             return False
         i = 0
@@ -43,12 +43,12 @@ if __name__ == "__main__":
         return True
 
     def clear_a(x):
-        """it clears the answers from the point of failure on"""
+        """this clears the answers from the point of failure on"""
         for i in range(x, n):
             a[i][1] = None
 
     def nqueens(x):
-        """recursive backtracking function to find the solution"""
+        """this function finds the solution"""
         for y in range(n):
             clear_a(x)
             if reject(x, y):
