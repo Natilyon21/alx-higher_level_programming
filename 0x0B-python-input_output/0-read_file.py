@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Contains a function that reads from a file """
+""" Module that contains a function that reads from a file """
 
 
 def read_file(filename=""):
